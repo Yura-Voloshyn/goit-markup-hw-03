@@ -132,20 +132,18 @@ p {
   background: #f5f4fa;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-around;
-  height: 648px;
 }
 .team-list {
   width: 1170px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: 0;
+  margin-right: 0; */
   margin-top: 186px;
 }
 .team-item {
-  margin-left: var(--between-list-margin);
+  margin-right: var(--between-list-margin);
   flex-basis: calc(100% / 4);
   text-align: center;
 }
@@ -163,6 +161,9 @@ p {
 }
 
 /* body portfolio */
+.filter-title {
+  display: none;
+}
 .button-list {
   list-style-type: none;
 }
