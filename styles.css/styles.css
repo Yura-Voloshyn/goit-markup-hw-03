@@ -3,12 +3,21 @@
   --second-color: #757575;
   --hover-color: #2196f3;
   --footer-text-color: #ffffff;
+  --between-list-margin: 30px;
 }
 body {
   background-color: #ffffff;
   color: var(--main-color);
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
+  width: 1600px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 /* header */
@@ -95,9 +104,11 @@ body {
   letter-spacing: 0.03em;
 }
 .section-title {
+  margin-top: 94px;
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
+  text-align: center;
 }
 .wtd-list {
   list-style-type: none;
@@ -108,15 +119,37 @@ body {
 .footer-list {
   list-style-type: none;
 }
-.section-team {
+/* .section-team {
   background: #f5f4fa;
-}
+} */
 .section-team .team-item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.container-team {
+  background: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  height: 648px;
+}
+.team-list {
+  width: 1170px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 186px;
+}
+.team-item {
+  margin-left: var(--between-list-margin);
+  flex-basis: calc(100% / 4);
+  text-align: center;
+}
+
 .team-list .team-title {
   color: var(--main-color);
   font-size: 16px;
