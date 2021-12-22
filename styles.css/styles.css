@@ -17,6 +17,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -31,15 +34,23 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 /* .logo.link.link-contact {
   display: block;
   flex-direction: row;
   justify-content: space-between;
 } */
+/* .header-list {
+  display: flex;
+} */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .logo {
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 700;
   color: #000000;
   font-size: 26px;
@@ -48,19 +59,31 @@ ul {
   text-decoration: none;
   letter-spacing: 0.03em;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-color {
   color: var(--hover-color);
 }
-.nav-list > li {
+.nav-list {
+  display: flex;
+}
+.nav-list > .nav-item:nth-child(-n + 2) {
   margin-right: 50px;
 }
-.nav-list {
-  margin-right: 331px;
+
+.nav-header {
+  display: flex;
+  align-items: center;
 }
+.contact {
+  margin-left: auto;
+}
+
 .nav-list,
 .contact {
   display: inline-flex;
+
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
@@ -80,9 +103,11 @@ ul {
 
 .link-contact {
   display: inline-block;
-  margin-right: 50px;
   color: var(--second-color);
   text-decoration: none;
+}
+.contact > .link-item:nth-child(1) {
+  margin-right: 50px;
 }
 .link:hover,
 .link-contact:hover,
@@ -95,6 +120,8 @@ ul {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--footer-text-color);
@@ -105,6 +132,7 @@ ul {
   text-transform: uppercase;
 }
 .hero-button {
+  display: inline-block;
   background: #2196f3;
   border-color: #2196f3;
   border-radius: 4px;
@@ -114,14 +142,14 @@ ul {
   line-height: 1.88;
   font-weight: 700;
   letter-spacing: 0.06em;
+  padding: 10px, 32px;
   cursor: pointer;
 }
 .section-list {
   list-style-type: none;
-  margin-top: var(--between-section-margin);
 }
 .section-pluses {
-  margin-top: var(--between-section-margin);
+  padding-top: var(--between-section-margin);
 }
 .section-pluses .pluses-title {
   font-size: 14px;
@@ -130,13 +158,20 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.pluses-text {
+  padding-top: 10px;
+}
 .section-pluses .pluses-text {
   color: var(--second-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.section-title {
+.section-wtd {
   padding-top: var(--between-section-margin);
+  padding-bottom: var(--between-section-margin);
+}
+.section-title {
+  /* padding-top: var(--between-section-margin); */
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
@@ -144,6 +179,7 @@ ul {
 }
 .wtd-list {
   list-style-type: none;
+  margin-top: 50px;
 }
 .team-list {
   list-style-type: none;
@@ -153,8 +189,9 @@ ul {
 }
 .section-team {
   background: #f5f4fa;
-  margin-top: var(--between-section-margin);
-  justify-content: center;
+  padding-top: var(--between-section-margin);
+  padding-bottom: var(--between-section-margin);
+  flex-wrap: nowrap;
 }
 .section-team .team-item {
   background: #ffffff;
@@ -162,30 +199,32 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-/* .container-team {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 94px 0;
-} */
+
 .team-list {
   margin-top: 50px;
   /* display: inline-block; */
   /* margin-left: 0;
   margin-right: 0; */
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   /* justify-content: center; */
+  flex-wrap: nowrap;
 }
 /* .team-list:first-child {
   padding-left: 215px;
 } */
 .team-item {
   display: inline-block;
-  margin-right: var(--between-list-margin);
+
+  /* margin-right: var(--between-list-margin); */
   /* flex-basis: calc(100% / 4); */
   text-align: center;
   /* margin-left: auto;
   margin-right: auto; */
   /* outline: 2px solid tomato; */
+  flex-wrap: nowrap;
+}
+.team-item:nth-child(-n + 3) {
+  margin-right: var(--between-list-margin);
 }
 .team-title {
   margin-top: 30px;
@@ -209,6 +248,10 @@ ul {
 /* body portfolio */
 .filter-title {
   display: none;
+}
+.section-filters {
+  padding-top: var(--between-section-margin);
+  padding-bottom: var(--between-section-margin);
 }
 .button-list {
   list-style-type: none;
