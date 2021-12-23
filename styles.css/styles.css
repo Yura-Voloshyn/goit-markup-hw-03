@@ -329,7 +329,7 @@ ul {
 }
 .pl-item {
   margin-right: var(--between-list-margin);
-  outline: 1px solid #eeeeee;
+  /* outline: 1px solid #eeeeee; */
   margin-bottom: var(--between-list-margin);
 }
 .portfolio-list > .pl-item:nth-child(3n + 3) {
@@ -358,6 +358,10 @@ ul {
 .portfolio-text {
   padding-left: 24px;
   padding-right: 24px;
+}
+.description {
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 /* footer */
 .footer {
