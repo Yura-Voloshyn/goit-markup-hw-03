@@ -98,6 +98,8 @@ ul {
 .link {
   color: var(--main-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link-studio {
   color: var(--hover-color);
