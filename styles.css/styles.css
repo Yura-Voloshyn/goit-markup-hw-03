@@ -366,7 +366,6 @@ ul {
 /* footer */
 .footer {
   background-color: #2f303a;
-  padding-left: 215px;
 }
 .footer-address {
   margin-top: 20px;
@@ -392,14 +391,17 @@ ul {
   letter-spacing: 0.03em;
 }
 .contact-atribute .address-link {
+  text-decoration: none;
   /* color: var(--main-color); */
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 9px;
 }
-.footer-list:last-child {
+.adr-item:nth-child(-n + 2) {
+  margin-bottom: 9px;
+}
+.footer-list > .adr-item:last-child {
   padding-bottom: 60px;
 }
 .address-link:hover,
